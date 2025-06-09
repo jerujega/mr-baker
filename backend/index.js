@@ -9,7 +9,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-
 // 1) Connect to MongoDB (local)
 mongoose.connect('mongodb://localhost:27017/mrbaker', {
   useNewUrlParser: true,
