@@ -16,6 +16,7 @@ mongoose.connect('mongodb://localhost:27017/mrbaker', {
 }).then(() => console.log('MongoDB Connected'))
   .catch(err => console.error(err));
 
+  
 // 2) User model
 const UserSchema = new mongoose.Schema({
   email: { type: String, required: true, unique: true },
